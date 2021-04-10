@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FF Shamel Family Sans One Book.ttf">
+            <string>FFShamelFamily-SansOneBook</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="289" id="KGk-i7-Jjw" customClass="OrderCell" customModule="Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="289"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="289"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKW-TQ-a9p">
+                        <rect key="frame" x="0.0" y="17" width="339" height="272"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ukb-Ra-FB4" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="0.0" width="339" height="228"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zv4-Zi-7Lw">
+                                        <rect key="frame" x="29" y="23" width="281" height="161"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اطلب اي شي" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvP-Nb-04R">
+                                        <rect key="frame" x="197" y="138" width="83" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="dJ9-GL-F9I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FFShamelFamily-SansOneBook" family="FF Shamel Family" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="المسوق الشخصي يفزع لك في اي وقت " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDL-xo-33e">
+                                        <rect key="frame" x="109" y="166" width="159" height="11"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="11" id="7dn-jp-Je9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FFShamelFamily-SansOneBook" family="FF Shamel Family" pointSize="9"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.71764705882352942" green="0.76078431372549016" blue="0.83921568627450982" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="JDL-xo-33e" firstAttribute="trailing" secondItem="Zv4-Zi-7Lw" secondAttribute="trailing" constant="-42" id="0iS-uq-7w1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zv4-Zi-7Lw" secondAttribute="bottom" constant="44" id="9tT-zA-jWd"/>
+                                    <constraint firstItem="JDL-xo-33e" firstAttribute="top" secondItem="gvP-Nb-04R" secondAttribute="bottom" constant="10" id="A3N-2K-w6c"/>
+                                    <constraint firstAttribute="height" constant="228" id="HGS-t4-6w6"/>
+                                    <constraint firstItem="Zv4-Zi-7Lw" firstAttribute="leading" secondItem="Ukb-Ra-FB4" secondAttribute="leading" constant="29" id="JJM-xM-80g"/>
+                                    <constraint firstItem="Zv4-Zi-7Lw" firstAttribute="top" secondItem="Ukb-Ra-FB4" secondAttribute="top" constant="23" id="Px6-ka-o3Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zv4-Zi-7Lw" secondAttribute="trailing" constant="29" id="SfM-kV-Gp9"/>
+                                    <constraint firstItem="gvP-Nb-04R" firstAttribute="bottom" secondItem="Zv4-Zi-7Lw" secondAttribute="bottom" constant="-28" id="WMk-KG-TBz"/>
+                                    <constraint firstItem="gvP-Nb-04R" firstAttribute="trailing" secondItem="Zv4-Zi-7Lw" secondAttribute="trailing" constant="-30" id="xGY-0h-w70"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="272" id="Evp-cg-Dpb"/>
+                            <constraint firstAttribute="trailing" secondItem="Ukb-Ra-FB4" secondAttribute="trailing" id="MCE-dL-xgc"/>
+                            <constraint firstItem="Ukb-Ra-FB4" firstAttribute="top" secondItem="OKW-TQ-a9p" secondAttribute="top" id="YO7-IL-7JV"/>
+                            <constraint firstItem="Ukb-Ra-FB4" firstAttribute="leading" secondItem="OKW-TQ-a9p" secondAttribute="leading" id="hav-Gk-tEF"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uex-g4-HZd" customClass="GradientView" customModule="Task" customModuleProvider="target">
+                        <rect key="frame" x="74" y="215" width="191" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myd-io-EZf">
+                                <rect key="frame" x="0.0" y="0.0" width="191" height="44"/>
+                                <state key="normal" title="اطلب اللي  بالك ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onOrderBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ost-Rj-arT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="myd-io-EZf" firstAttribute="top" secondItem="Uex-g4-HZd" secondAttribute="top" id="7Fc-Vi-a9h"/>
+                            <constraint firstItem="myd-io-EZf" firstAttribute="leading" secondItem="Uex-g4-HZd" secondAttribute="leading" id="CU9-8O-RP0"/>
+                            <constraint firstAttribute="trailing" secondItem="myd-io-EZf" secondAttribute="trailing" id="CUq-p7-i1X"/>
+                            <constraint firstAttribute="height" constant="44" id="G2u-0j-10K"/>
+                            <constraint firstAttribute="width" constant="191" id="Sbf-1U-T9Q"/>
+                            <constraint firstAttribute="bottom" secondItem="myd-io-EZf" secondAttribute="bottom" id="vbB-pU-V1J"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.24970358610000001" green="0.50906085970000003" blue="0.59122085570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.2048613131" green="0.3756495118" blue="0.61100494859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OKW-TQ-a9p" secondAttribute="trailing" id="22S-Co-bPO"/>
+                    <constraint firstItem="Uex-g4-HZd" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2Ub-lc-vlA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Uex-g4-HZd" secondAttribute="bottom" constant="19" id="ReQ-UB-PXx"/>
+                    <constraint firstItem="OKW-TQ-a9p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="TMI-KQ-BVs"/>
+                    <constraint firstItem="OKW-TQ-a9p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XT3-Bh-iwP"/>
+                    <constraint firstAttribute="bottom" secondItem="OKW-TQ-a9p" secondAttribute="bottom" id="upC-0u-kCx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="marketLbl" destination="JDL-xo-33e" id="hD6-al-djZ"/>
+                <outlet property="orderLbl" destination="gvP-Nb-04R" id="7cV-iI-LRC"/>
+                <outlet property="pannerImage" destination="Zv4-Zi-7Lw" id="L9N-wK-3FF"/>
+            </connections>
+            <point key="canvasLocation" x="110.86956521739131" y="76.004464285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
